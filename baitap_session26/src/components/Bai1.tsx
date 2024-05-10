@@ -9,6 +9,9 @@ export default function Bai1() {
        <ul>3. JavaScript</ul>
        <ul>4. ReactJS</ul>
     </div>
+    /*
+      khi return các element thì phải có thẻ fragment bọc bên ngoài
+    */ 
     
   )
 }
