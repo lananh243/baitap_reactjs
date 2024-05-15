@@ -16,7 +16,7 @@ export default class Parent_Comp extends Component<Props,State> {
   render() {
     return (
       <div> Bài 4
-        <Children_Comp/>  
+        <Children_Comp a={this.state.name}/>  
       </div>
       
     )

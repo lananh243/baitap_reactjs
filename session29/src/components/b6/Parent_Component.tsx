@@ -35,7 +35,7 @@ export default class Parent_Component extends Component<Props, State> {
   render() {
     return (
       <div>Bài 6
-        <Child_Component></Child_Component>
+        <Child_Component a={this.state.users}></Child_Component>
       </div>
     )
   }

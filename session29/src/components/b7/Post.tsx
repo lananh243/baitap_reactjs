@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 interface Props {
-
+    listPosts : List;
 }
 interface State {
     listPosts : List[];
@@ -38,14 +38,15 @@ export default class Post extends Component<{}, State> {
         }
     }
   render() {
+    const {a} = this.props;
     return (
       <div>
-        {this.state.listPosts.map((list: List)=> (
-            <div key={list.id}>
-                <p>Id : {list.id}</p>
-                <p>Title : {list.title}</p>
-                <p>Content : {list.content}</p>
-                <p>Author : {list.author}</p>
+        {this.state.listPosts.map((a: List)=> (
+            <div key={a.id}>
+                <p>Id : {a.id}</p>
+                <p>Title : {a.title}</p>
+                <p>Content : {a.content}</p>
+                <p>Author : {a.author}</p>
                 <p>***********************</p>
             </div>
         ))}

@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 interface State {
     users: User[];
     
 }
-interface Props {}
+interface Props {
+  a: User;
+}
 interface User {
     id: number;
     name: string;
@@ -32,13 +34,14 @@ export default class Child_Component extends Component<Props, State> {
         }
     }
   render() {
+    const {a} = this.props;
     return (
       <div>
-      {this.state.users.map((user: User) => (
-        <div key={user.id}>
-          <p>Name: {user.name}</p>
-          <p>Address: {user.address}</p>
-          <p>Email: {user.email}</p>
+      {this.state.users.map((a: User) => (
+        <div key={a.id}>
+          <p>Name: {a.name}</p>
+          <p>Address: {a.address}</p>
+          <p>Email: {a.email}</p>
           <p>******************</p>
         </div>
       ))}

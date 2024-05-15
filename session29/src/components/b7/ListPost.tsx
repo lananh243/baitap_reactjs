@@ -41,7 +41,7 @@ export default class ListPost extends Component<Props, State> {
   render() {
     return (
       <div>Bài 7
-        <Post/>
+        <Post a={this.state.listPosts}/>
       </div>
     )
   }

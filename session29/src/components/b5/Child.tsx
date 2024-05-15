@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 interface State {
   id: number;
   name: string;
   price: string;
   quantity: number;
 }
-interface Props {}
+
+interface Props {
+  a: number;
+  b: string;
+  c: string;
+  d: number;
+}
 export default class Child extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
@@ -17,14 +23,15 @@ export default class Child extends Component<Props, State> {
     };
   }
   render() {
+    const { a,b,c,d } = this.props;
     return (
       <div>
         <h2>Dữ liệu trong component con</h2>
-        <p>Id : {this.state.id}</p>
-        <p>Product name : {this.state.name}</p>
-        <p>Price : {this.state.price}</p>
-        <p>Quantity : {this.state.quantity}</p>
+        <p>Id : {a}</p>
+        <p>Product name : {b}</p>
+        <p>Price : {c}</p>
+        <p>Quantity : {d}</p>
       </div>
-    )
+    );
   }
 }

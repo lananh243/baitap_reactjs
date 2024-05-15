@@ -8,7 +8,7 @@ interface Props {
 export default function Parent(props:Props) {
   return (
     <div>Parent
-      <p>Xin chào {props.a} năm nay tôi {props.b} tuổi</p>
+      <p>Xin chào {props.a} năm nay tôi {props.b} tuổi </p>
 
       <Child></Child>
     </div>

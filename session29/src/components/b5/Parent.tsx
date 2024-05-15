@@ -20,7 +20,7 @@ export default class Parent extends Component<Props, State> {
   }
   render() {
     return <div>Bài 5
-      <Child></Child>
+      <Child a={this.state.id} b={this.state.name} c={this.state.price} d={this.state.quantity}></Child>
     </div>;
   }
 }
