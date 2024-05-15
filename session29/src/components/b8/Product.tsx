@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 interface Props {}
 interface State {
-    listPro : ListPro[];
+    products : ListPro[];
 }
 interface ListPro {
     id: number,

@@ -11,7 +11,7 @@ interface List {
     content: string,
     author: string,
 }
-export default class Post extends Component {
+export default class Post extends Component<{}, State> {
     constructor(props : Props){
         super(props)
         this.state = {

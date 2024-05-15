@@ -10,7 +10,7 @@ interface User {
     address: string;
     email: string;
 }
-export default class Child_Component extends Component {
+export default class Child_Component extends Component<Props, State> {
     constructor(props : Props) {
         super(props)
         this.state = {
