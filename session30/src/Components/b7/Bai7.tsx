@@ -6,6 +6,10 @@ export default function Bai7() {
   const handleAddElement = () => {
     const random: number = Math.floor(Math.random() * 100) + 1;
     setNumbers([...numbers, random]);
+    /*
+      khi muốn load lại component (re-render) thì đi setState
+      bắt buộc cái state phải khác state ban đầu
+    */ 
   };
 
   return (
