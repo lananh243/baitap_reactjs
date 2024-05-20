@@ -39,7 +39,7 @@ export default class Bai10 extends Component<Props, State> {
     return (
       <div>
         <h1>Bài 10</h1>
-        <b>Count : {this.state.count}</b>
+        <h2>Count : {this.state.count}</h2>
       </div>
     );
   }

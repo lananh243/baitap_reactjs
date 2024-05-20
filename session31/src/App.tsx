@@ -91,6 +91,7 @@
 
 import React, { Component } from 'react';
 import Bai11 from './components/b11/Bai11';
+import Bai10 from './components/b10/Bai10';
 type Props = {};
 
 type State = {
@@ -216,6 +217,7 @@ handleEditJob = (editJobId: number) => {
     const allCompleted = completedJobs === jobs.length && jobs.length > 0;
     return (
       <>
+      <h1>Bài 11 + 12</h1>
         {this.state.show === true ? (
           <Bai11
             deleteJob={this.handleDeleteJob}
@@ -255,6 +257,7 @@ handleEditJob = (editJobId: number) => {
             )}
           </div>
         )}
+        <Bai10></Bai10>
       </>
     );
   }
