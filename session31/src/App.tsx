@@ -92,6 +92,8 @@
 import React, { Component } from 'react';
 import Bai11 from './components/b11/Bai11';
 import Bai10 from './components/b10/Bai10';
+import Class from './components/setTimout/Class';
+
 type Props = {};
 
 type State = {
@@ -258,6 +260,7 @@ handleEditJob = (editJobId: number) => {
           </div>
         )}
         <Bai10></Bai10>
+        <Class></Class>
       </>
     );
   }
