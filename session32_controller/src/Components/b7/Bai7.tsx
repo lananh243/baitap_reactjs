@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Bai7() {
-    const [gender, setgender] = useState<string[]>([]);
+    const [gender, setgender] = useState<string>("");
     const changeGender = (e:React.ChangeEvent<HTMLInputElement>) => {
         setgender(e.target.value);
     }
