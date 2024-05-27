@@ -5,6 +5,7 @@ import List from './components/bt_session39/List';
 import Tab from './components/bt_session39/Tab';
 import Modal from './components/bt_session39/Modal';
 import { Task } from './components/types';
+import "./index.css"
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -41,7 +42,7 @@ const App: React.FC = () => {
   const confirmDeleteTask = () => {
     if (taskToDelete) {
       deleteTask(taskToDelete.id);
-      setTaskToDelete(null); // Reset taskToDelete after deletion
+      setTaskToDelete(null);
     }
   };
 
