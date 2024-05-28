@@ -1,0 +1,50 @@
+// .login {}
+// .login .login-name {
+//     background-color: rgb(95, 95, 208);
+// }
+// .login .login-pass {
+//     background-color: pink;
+// }
+.login {
+    .login-name {
+        background-color: chocolate;
+    }
+    .login-pass {
+        background-color: bisque;
+    }
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login_picture {
+        width: 500px;
+        height: 550px;
+    }
+    .login_picture img {
+        width: 400px;
+        height: 100%;
+    }
+    .form-login {
+        width: 400px;
+        height: 550px;
+    }
+    .login-text {
+        display: flex;
+        align-items: center;
+        color: #ccc;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px 0;
+        width: 100%;
+    }
+      
+    .login-text::before,
+    .login-text::after {
+        content: "";
+        flex-grow: 1;
+        border-top: 1px solid #ccc;
+        margin: 0 10px;
+    }
+}
