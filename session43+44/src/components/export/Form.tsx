@@ -1,6 +1,44 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+type RowData = {
+    col1: string;
+    col2: string;
+    col3: string;
+};
+
+const sampleData: RowData[] = [
+    { col1: 'Litiam purus in', col2: 'Curabitur donec duis', col3: 'Marbi pharetra, accumsan' },
+    { col1: 'Duis eget habitant', col2: 'At amet adio', col3: 'Commodo eget scelerisque' },
+    { col1: 'Aliquam velit lacus', col2: 'Pellentesque egetstas placerant', col3: 'Tortor habitant sit' },
+    { col1: 'Fermentum sceierisque ultricies', col2: 'Morbi sagittis nulla', col3: 'Quam semper quis' },
+    { col1: 'Integer semper pellentesque', col2: 'Neque turpis enim', col3: 'Egestas non sociis' },
+    { col1: 'Parturient at id', col2: 'Sem neque, mattis', col3: 'Pellentesque facilisis massa' },
+    { col1: 'Amet, pretium eget', col2: 'In ispum volutpat', col3: 'Ut feugiat egestas' },
+    { col1: 'Risus consequat sollicitudin', col2: 'Adipiscing adio nulla', col3: 'Pharetra id sit' },
+];
+
+localStorage.setItem('tableData', JSON.stringify(sampleData));
 
 export default function Form() {
+    const [data, setData] = useState<RowData[]>([]);
+
+    useEffect(() => {
+        const storedData = localStorage.getItem('tableData');
+        if (storedData) {
+            setData(JSON.parse(storedData));
+        }
+    }, []);
+
+    // const handleDelete = (index) => {
+    //     const newData = data.filter((_, i) => i !== index);
+    //     setData(newData);
+    //     localStorage.setItem('tableData', JSON.stringify(newData));
+    // };
+
+    // const handleEdit = (index) => {
+    //     // Chức năng "Edit" sẽ được triển khai sau
+    //     console.log(`Editing row ${index}`);
+    // };
+    
   return (
         <div className="bg-white p-3 rounded shadow w-[100%] ">
             <h2 className="text-xl font-bold mb-3">Form title</h2>
@@ -21,141 +59,29 @@ export default function Form() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <td className="px-4 py-2">Litiam purus in</td>
-                    <td className="px-4 py-2">Curabitur donec duis</td>
-                    <td className="px-4 py-2">Marbi pharetra, accumsan</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Duis eget habitant</td>
-                    <td className="px-4 py-2">At amet adio</td>
-                    <td className="px-4 py-2">Commodo eget scelerisque</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Aliquam velit lacus</td>
-                    <td className="px-4 py-2">Pellentesque egetstas placerant</td>
-                    <td className="px-4 py-2">Tortor habitant sit</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Fermentum sceierisque ultricies</td>
-                    <td className="px-4 py-2">Morbi sagittis nulla</td>
-                    <td className="px-4 py-2">Quam semper quis</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Integer semper pellentesque</td>
-                    <td className="px-4 py-2">Neque turpis enim</td>
-                    <td className="px-4 py-2">Egestas non sociis</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Parturient at id</td>
-                    <td className="px-4 py-2">Sem neque, mattis</td>
-                    <td className="px-4 py-2">Pellentesque facilisis massa</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Amet, pretium eget</td>
-                    <td className="px-4 py-2">In ispum volutpat</td>
-                    <td className="px-4 py-2">Ut feugiat egestas</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Risus consequat sollicitudin</td>
-                    <td className="px-4 py-2">Adipiscing adio nulla</td>
-                    <td className="px-4 py-2">Pharetra id sit</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td className="px-4 py-2">Risus consequat sollicitudin</td>
-                    <td className="px-4 py-2">Adipiscing adio nulla</td>
-                    <td className="px-4 py-2">Pharetra id sit</td>
-                    <td className="px-4 py-2 flex items-center">
-                        <button className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded">
-                        <span className="material-symbols-outlined">edit</span>
-                        Edit
-                        </button>
-                        <button className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded">
-                        <span className="material-symbols-outlined">delete</span>
-                        Delete
-                        </button>
-                    </td>
-                    </tr>
+                    {data.map((row, index) => (
+                        <tr key={index}>
+                            <td className="px-4 py-2">{row.col1}</td>
+                            <td className="px-4 py-2">{row.col2}</td>
+                            <td className="px-4 py-2">{row.col3}</td>
+                            <td className="px-4 py-2 flex items-center">
+                                <button
+                                    className="w-[70px] h-[35px] bg-blue-400 text-white flex items-center justify-center gap-2 mr-4 rounded"
+                                    // onClick={() => handleEdit(index)}
+                                >
+                                    <span className="material-symbols-outlined">edit</span>
+                                    Edit
+                                </button>
+                                <button
+                                    className="w-[130px] h-[35px] bg-yellow-300 text-white flex items-center justify-center gap-2 rounded"
+                                    // onClick={() => handleDelete(index)}
+                                >
+                                    <span className="material-symbols-outlined">delete</span>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
                 </table>
                 <br />

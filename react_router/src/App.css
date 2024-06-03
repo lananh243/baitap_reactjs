@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  gap: 60px;
+  text-align: center; 
+  justify-content: space-around;
+}
+.container .navbar1.active {
+  width: 90px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  gap: 60px;
+  text-align: center;
+  margin-top: 50px;
+}
+.navbar2.active {
+  width: 90px;
+  height: 40px;
+  background-color: rgb(77, 77, 214);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
