@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myFindIndex(numbers, value, callback) {
+        callback(numbers, value);
+      }
+      const callback = (numbers, value) => {
+        let find = false;
+        for (let i = 0; i < numbers.length; i++) {
+          if (numbers[i] === value) {
+            console.log("Vị trí tìm thấy: ", i);
+            find = true;
+            return;
+          }
+        }
+        if (!find){
+          console.log(-1);
+        }
+        
+      };
+      const numbers = [1, 2, 2, 3, 4, 5, 6];
+      myFindIndex(numbers, 5, callback);
+    </script>
+  </body>
+</html>

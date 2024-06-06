@@ -1,0 +1,31 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(require("react"));
+const react_bootstrap_1 = require("react-bootstrap");
+const react_router_dom_1 = require("react-router-dom");
+function ListUser() {
+    const navigate = (0, react_router_dom_1.useNavigate)();
+    const users = [
+        { id: 1, name: "Nguyễn Văn A", email: "nva@gmail.com", address: "Hà Nội" },
+        { id: 2, name: "Nguyễn Văn B", email: "nvb@gmail.com", address: "Hà Nam" },
+        { id: 3, name: "Nguyễn Văn C", email: "nvc@gmail.com", address: "Ninh Bình" }
+    ];
+    return (<>
+        <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "50px" }}>
+            {users.map(user => (<react_bootstrap_1.Card key={user.id} style={{ width: "300px", height: "240px" }}>
+                    <react_bootstrap_1.Card.Body>
+                        <react_bootstrap_1.Card.Text>Id : {user.id}</react_bootstrap_1.Card.Text>
+                        <react_bootstrap_1.Card.Text>UserName : {user.name}</react_bootstrap_1.Card.Text>
+                        <react_bootstrap_1.Card.Text>Email : {user.email}</react_bootstrap_1.Card.Text>
+                        <react_bootstrap_1.Card.Text>Address : {user.address}</react_bootstrap_1.Card.Text>
+                        <react_bootstrap_1.Button onClick={() => navigate(`/users/${user.id}`)} style={{ width: "100%" }} variant="primary">Xem chi tiết</react_bootstrap_1.Button>
+                    </react_bootstrap_1.Card.Body>
+                </react_bootstrap_1.Card>))}
+            
+        </div>
+    </>);
+}
+exports.default = ListUser;

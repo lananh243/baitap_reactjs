@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---
+    Promise : sinh ra giải quyết các tác vụ bất đồng bộ 
+    giup viec giai quuyet batdong bo ma bi call back-hell(dung callback)
+    code nhin gọn gàng de chinh sua bảo trì hơn
+    Promise sinh ra o phien ban ES6-2015
+    1.cú pháp
+    let promise =new Promise ();
+    // khoi tao doi tuong tu object constructor 
+    // đối số của new Promise nhận vào 1 cái hàm 
+    trong hàm này nhận vào 2 tham số 
+    1.resolve: giai quyết (thanh công)
+    2.reject:từ chối (thất bại)
+    -->
+     <script>
+        // setTimeout(() => {
+        //     console.log(1111);
+        //     setTimeout(() => {
+        //         console.log(2222);
+        //         setTimeout(() => {
+        //             console.log(33333);
+        //         },1000)
+        //     },1000)
+        // },1000)
+        // Khởi tạo promise
+        let promise = new Promise ((resolve,reject) => {
+            // Viết logic xử lí code
+            // nếu logic thành công thì gọi resolve ===> nhảy vào .then
+            // nếu logic thất bại thì gọi reject ===> nhảy vào .catch
+            // resolve([1,2,3])
+            // Những tác vụ server , tương tác database
+            // resolve(["hoa","ngọc","lan"]);
+            // reject("Lỗi")
+            
+        })
+        // Khi khởi tạo 1 promise thì nó đang ở trạng thái pending(chờ xử lí)
+        // bên trong phương thức .then thì có nhiều phương thức .then khác kết quả trả về của then đầu là than số đầu vào của then sau 
+        promise
+        .then((data) => {
+            console.log("Khi thành công trả về dữ liệu",data);
+        })
+        .catch((err) =>{
+            console.log("Khi thất bại báo lỗi",err);
+        })
+        let newPromise = new Promise((resolve,reject) => {
+            setTimeout(() => {
+                resolve();
+
+            },2000)
+        })
+        newPromise
+        // .then(data => {
+        //     return 6
+        // })
+        // .then((data1) => {
+        //     console.log(data1);
+        // })
+        .then(() => {
+            return new Promise((resolve,reject) => {
+                setTimeout(() => {
+                    console.log("11111");
+                    resolve()
+                }, 1000);
+            })
+        })
+        .then(() => {
+            return new Promise((resolve,reject) => {
+                setTimeout(() => {
+                    console.log("22222");
+                    resolve()
+                }, 1000);
+            })
+        })
+        .then(() => {
+            return new Promise((resolve,reject) => {
+                setTimeout(() => {
+                    console.log("33333");
+                    resolve()
+                }, 1000);
+            })
+        })
+     </script>
+</body>
+</html>

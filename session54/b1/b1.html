@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const calculateBMI = (weight, height) => {
+            if(weight <= 0 || height <= 0){
+                throw new Error ("Cân nặng và chiều cao không được nhỏ hơn 0");
+            }
+            if (typeof weight !== "number" || typeof height !== "number") {
+                throw new Error ("Kiểu dữ liệu chưa chính xác");
+            }
+            if (isNaN(weight) || isNaN(height)) {
+                throw new Error ("Kiểu dữ liệu không phải là số");
+            }
+            let result = weight / (height * height);
+
+            return result;
+        }
+        try {
+            const result = calculateBMI(70, 1.75);
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+</body>
+</html>

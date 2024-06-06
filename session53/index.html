@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Đồng bộ 
+        1. Đồng bộ : synchronous
+        Ngôn ngữ javascript là 1 ngôn  ngữ đơn luồng (single thread : chỉ 1 luồng duy nhất , luồng code chạy từ trái qua phải và từ trên xuống dưới)
+        2. Bất đồng bộ : asynchronous
+        - Những vc cần time xử lí như các hàm settimeout, setInterval, readfile, writefile , gửi request lên server , các thao tác tương tác database
+        1. dùng callback : là 1 hàm đc truyền vào làm đối số của hàm khác
+        2. promise
+        3. async-await
+    -->
+    <!-- <script>
+        console.log("CV1");
+        setTimeout(()=> {
+            console.log("CV2");
+        },1000)
+        console.log("CV3");
+        function task1(a) {
+            // cần time xử lí cv1
+            // cv1 cần 2s để thực thi
+            setTimeout(() => {
+                console.log("cv1 đc thực thi");
+                a();
+            },2000);  
+        }
+        function task2() {
+            console.log("đc thực thi sau khi task1 hoàn thành");
+        }
+        // task1(task2);
+        setTimeout(()=> {
+            console.log("CV1 thực thi");
+            setTimeout(()=> {
+                console.log("cv2 thực thi sau khi cv1 hoàn thành");
+                setTimeout(() => {
+                    console.log("cv3 thực thi sau khi cv2 hoàn thành");
+                },7000)
+            },3000)
+        },1000)
+        // Khi viết nhiều hàm xử lí lồng nhau thì sẽ rơi vào tình trạng callback hell (địa ngục)
+        let arr = [1,2,3,4,5];
+        // let result = arr.map((item) => {
+        //     return item*2
+        // })
+        // dùng callback viết 1 hàm xử lí tương tự như map
+        // custom lại hàm map
+        function myMap (a,callback) {
+            let result = [];
+            for (const value of a){
+                result.push(callback(value))
+            }
+            return result;
+        }
+        myMap(arr,(item) => item*2);
+        // let result1 = arr.filter((item) => item > 3);
+        // console.log("result",result1);
+
+        function myFilter(a,callback) {
+            let result2 = [];
+            for (const value of a){
+                if(callback(value) === true){
+                    result2.push(value)
+                }
+            }
+            return result2
+        }
+        console.log(myFilter(arr,(item) => item>3)); 
+    </script> -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>

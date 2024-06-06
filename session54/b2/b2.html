@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const divideNumbers = (a,b) => {
+            if (b === 0){
+                throw new Error ("Không thể chia cho 0 .Kết thúc hàm divideNumbers")
+            }
+            if (typeof a !== 'number' || typeof b !== 'number'){
+                throw new Error("Phải nhập vào 2 số .Kết thúc hàm divideNumbers")
+            }
+            let result = a / b;
+            return result;
+        }
+        try {
+            const result = divideNumbers("abc", 2);
+            console.log(result);
+        } catch (error) {
+            console.log(error);
+        } finally{
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFind(numbers, value, callback) {
+            callback(numbers, value);
+        }
+
+        const callback = (numbers, value) => {
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] === value) {
+                    console.log(value);
+                    return;
+                }
+                
+            }
+            console.log(null);
+        }
+
+        const numbers = [1, 2, 2, 3, 4, 5, 6];
+        myFind(numbers, 2, callback);
+        myFind(numbers, 10, callback)
+    </script>
+</body>
+</html>

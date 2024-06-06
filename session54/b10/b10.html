@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findElement(arr, value) {
+            return new Promise((resolve, reject) => {
+                let found = false;
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] === value) {
+                        console.log(`Phần tử ${value} tìm thấy ở vị trí thứ ${i}`);
+                        found = true;
+                        return;
+                    }
+                }
+                if (found) {
+                    resolve();
+                } else {
+                    throw new Error(`Không tìm thấy phần tử ${value}`);
+                }
+            });
+        }
+
+        findElement([1, 2, 3, 4, 5], 2)
+        .then(result => {
+            console.log(result);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    </script>
+</body>
+</html>
