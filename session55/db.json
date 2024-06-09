@@ -1,0 +1,106 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "Hạt giống tâm hồn",
+      "content": "Triết lí",
+      "thumbnail": "https://simg.zalopay.com.vn/zlp-website/assets/sach_hay_nhat_nen_doc_hat_giong_tam_hon_9187a42c48.jpg",
+      "create_at": "3/6/1945",
+      "create_by": "Nhiều tác giả",
+      "comments": [
+        {
+          "id": 1,
+          "content": "Hay",
+          "created_at": "2/5/1990",
+          "created_by": "Bích Diệp"
+        },
+        {
+          "id": 2,
+          "content": "Rất hay",
+          "created_at": "5/7/1940",
+          "created_by": "Mai Lan"
+        },
+        {
+          "id": 3,
+          "content": "Bình thường",
+          "created_at": "12/5/1970",
+          "created_by": "Bích Ngà"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Nhà giả Kim",
+      "content": "Phiêu lưu",
+      "thumbnail": "https://simg.zalopay.com.vn/zlp-website/assets/sach_hay_nen_doc_nha_gia_kim_ea63da0d8f.jpeg",
+      "create_at": "4/6/1988",
+      "create_by": "Paulo Coelho",
+      "comments": []
+    },
+    {
+      "id": 3,
+      "title": "Hành trình về phương Đông",
+      "content": "Cuộc hành trình",
+      "thumbnail": "https://simg.zalopay.com.vn/zlp-website/assets/sach_hay_nhat_nen_doc_hanh_trinh_ve_phuong_dong_b9d61fdb08.jpg",
+      "create_at": "5/5/1955",
+      "create_by": "Baird T. Spalding",
+      "comments": [
+        {
+          "id": 1,
+          "content": "Hay",
+          "created_at": "2/5/1990",
+          "created_by": "Bích"
+        },
+        {
+          "id": 2,
+          "content": "Rất hay",
+          "created_at": "5/7/1940",
+          "created_by": "Hoa"
+        },
+        {
+          "id": 3,
+          "content": "Không hay lắm",
+          "created_at": "12/5/1970",
+          "created_by": "Cúc"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Người giàu có nhất thành Babylon",
+      "content": "Thành tựu lớn lao",
+      "thumbnail": "https://simg.zalopay.com.vn/zlp-website/assets/sach_hay_nhat_nen_doc_Nguoi_giau_co_nhat_thanh_Babylon_e3e1ac2968.jpg",
+      "create_at": "19/3/1965",
+      "create_by": "George Samuel Clason",
+      "comments": [
+        {
+          "id": 1,
+          "content": "Hay",
+          "created_at": "2/5/1990",
+          "created_by": "My"
+        },
+        {
+          "id": 2,
+          "content": "Rất hay",
+          "created_at": "5/7/1940",
+          "created_by": "Trinh"
+        },
+        {
+          "id": 3,
+          "content": "Bình thường",
+          "created_at": "12/5/1970",
+          "created_by": "Hà"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Đắc nhân tâm",
+      "content": "Khuyên dạy",
+      "thumbnail": "https://sbooks.vn/wp-content/uploads/2023/05/1-26.png",
+      "create_at": "4/6/1980",
+      "create_by": "Dale Carnegie",
+      "comments": []
+    }
+  ]
+}

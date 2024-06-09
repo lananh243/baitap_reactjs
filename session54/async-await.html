@@ -14,12 +14,15 @@
         nếu trong promise mà muốn bắt lỗi thì dùng .catch-reject()
         trong anync await làm sao để bắt lỗi đc
         try-catch
+        await chỉ đợi những tác vụ promise thôi
      -->
      <script>
         async function asyncAwait(params) {
         await new Promise((resolve,reject) => {
                 setTimeout(() => {
                     console.log("1111");
+                    // Khi tác vụ promise đó có resolve hoặc reject thì
+                    // Tác vụ đấy mới được xem là hoàn thành , còn ko là pending
                     resolve()
                 },2000)
             })
