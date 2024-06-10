@@ -1,0 +1,67 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "Triết lí nhân sinh",
+      "content": "Đắc nhân tâm",
+      "thumbnail": "https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/sach-hay-2.jpg",
+      "created_at": "3/2/2005",
+      "created_by": "Dale",
+      "comments": []
+    },
+    {
+      "title": "Tâm tình",
+      "content": "Hoa vàng trên cỏ xanh",
+      "thumbnail": "https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/sach-hay-4.jpg",
+      "created_at": "14/5/2003",
+      "created_by": "Nhiều tác giả",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Cuốn sách kể về cuộc đời và sự nghiệp của Vito Corleone",
+      "content": "Bố già",
+      "thumbnail": "https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/sach-hay-5.jpg",
+      "created_at": "12/3/2000",
+      "created_by": "Mario",
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "Câu truyện mang tính truyền cảm hứng",
+      "content": "Hạt giống tâm hồn",
+      "thumbnail": "https://cellphones.com.vn/sforum/wp-content/uploads/2023/10/sach-hay-12.jpg",
+      "created_at": "23/7/2001",
+      "created_by": "Tony",
+      "comments": []
+    },
+    {
+      "title": "Cuốn sách ghi lại chuyến du hành đầy mạo hiểm và ly kỳ",
+      "content": "Hành trình về phương Đông",
+      "thumbnail": "https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book/0/0/0/11706.jpg?v=3&w=340&h=497",
+      "created_at": "6/2/2002",
+      "created_by": "Baird",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "content": "Bình thường",
+      "created_at": "26/2/2015",
+      "created_by": "Nga",
+      "id": 1
+    },
+    {
+      "content": "Hay",
+      "created_at": "17/5/2020",
+      "created_by": "Lan",
+      "id": 2
+    },
+    {
+      "content": "Tuyệt vời",
+      "created_at": "20/5/2013",
+      "created_by": "An",
+      "id": 3
+    }
+  ]
+}
