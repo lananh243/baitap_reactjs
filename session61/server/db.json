@@ -1,0 +1,44 @@
+{
+  "jobs": [
+    {
+      "name": "Học bài",
+      "status": false,
+      "id": 6
+    },
+    {
+      "name": "Đánh cầu",
+      "status": false,
+      "id": 7
+    },
+    {
+      "name": "Nấu cơm",
+      "status": false,
+      "id": 8
+    },
+    {
+      "name": "Code",
+      "status": false,
+      "id": 9
+    },
+    {
+      "name": "Làm việc",
+      "status": false,
+      "id": 10
+    },
+    {
+      "name": "Chơi game",
+      "status": false,
+      "id": 11
+    },
+    {
+      "name": "Chạy",
+      "status": false,
+      "id": 12
+    },
+    {
+      "name": "Đi ngủ",
+      "status": false,
+      "id": 13
+    }
+  ]
+}

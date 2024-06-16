@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box-1{
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 550px;
+    margin-top: 50px;
+    height: 175px;
+}
+.input {
+    width: 485px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    border: 1 grey;
+}
+.button {
+    width: 485px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: rgb(174, 174, 237);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.statusJob{
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 550px;
+    height: 70px;
+}
+.dilate{
+    display: flex;
+    justify-content: space-evenly;
+}
+.status{
+    width: 100px;
+    height: 33px;
+    margin-top: 18px;
+    border-radius: 5px;
+}
+.job{
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 550px;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.btn {
+    width: 230px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: brown;
+    color: white;
+}
+.job-list {
+    max-height: 350px; 
+    overflow-y: auto;
+}
+
+.input-wrapper {
+    position: relative;
+  }
+  
+  .input-error {
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .input-error::before {
+    content: "⚠ ";
+    margin-left: 30px;
+  }
+  
+/* Other styles remain unchanged */
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 20s linear infinite;
+    margin: 50px auto; /* Adjust margin to center the spinner */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Style for loading overlay */
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
