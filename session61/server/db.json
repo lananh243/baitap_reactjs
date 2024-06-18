@@ -1,44 +1,31 @@
 {
   "jobs": [
     {
-      "name": "Học bài",
-      "status": false,
-      "id": 6
-    },
-    {
-      "name": "Đánh cầu",
-      "status": false,
-      "id": 7
-    },
-    {
-      "name": "Nấu cơm",
-      "status": false,
-      "id": 8
-    },
-    {
-      "name": "Code",
-      "status": false,
-      "id": 9
-    },
-    {
-      "name": "Làm việc",
-      "status": false,
-      "id": 10
-    },
-    {
-      "name": "Chơi game",
-      "status": false,
-      "id": 11
-    },
-    {
-      "name": "Chạy",
-      "status": false,
+      "name": "Nhảy",
       "id": 12
     },
     {
-      "name": "Đi ngủ",
+      "name": "Chơi",
       "status": false,
-      "id": 13
+      "id": 16
+    },
+    {
+      "name": "Đi làm",
+      "status": false,
+      "id": 17
+    },
+    {
+      "name": "Ăn",
+      "status": false,
+      "id": 18
+    },
+    {
+      "name": "Gym",
+      "id": 19
+    },
+    {
+      "name": "Bán áo",
+      "id": 20
     }
   ]
 }
