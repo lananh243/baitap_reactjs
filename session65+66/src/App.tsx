@@ -7,7 +7,6 @@ import Product from './components/b3/Product'
 import RandomNumber from './components/b5/RandomNumber'
 import ChangeState from './components/b6/ChangeState'
 import Bai7 from './components/b7+b8/Bai7'
-import Register from './components/b9+10/Register'
 
 export default function App() {
   return (
@@ -20,7 +19,6 @@ export default function App() {
       <RandomNumber></RandomNumber>
       <ChangeState></ChangeState>
       <Bai7></Bai7>
-      <Register></Register>
     </div>
   )
 }

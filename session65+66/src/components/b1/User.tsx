@@ -7,7 +7,8 @@ export default function User() {
     })
     
   return (
-    <div>Bài 1
+    <div>
+      <h1>Bài 1</h1>
         <h1>Thông tin cá nhân</h1>
         <p>Id : {stateUser.userReducer.id}</p>
         <p>Họ và tên : {stateUser.userReducer.name}</p>

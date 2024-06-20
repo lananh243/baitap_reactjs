@@ -14,7 +14,7 @@ export default function Bai7() {
 
     return (
         <div>
-            <h1>Bài 7</h1>
+            <h1>Bài 7,8</h1>
             <div className={checkboxState ? 'dark-mode' : 'light-mode'}>
                 <input type="checkbox" checked={checkboxState} onChange={changeContent}/>
                 <span>{checkboxState ? 'Tối' : 'Sáng'}</span>

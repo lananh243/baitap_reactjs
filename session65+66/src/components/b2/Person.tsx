@@ -9,7 +9,7 @@ export default function Person() {
 
   return (
     <div>
-      Bài 2
+      <h1>Bài 2</h1>
       <table border={1}>
         <thead>
           <tr>
