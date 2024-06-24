@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import "./book.css"
 import { Button, Form, Modal } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { BookTodo } from '../../interface';
+import { BookTodo } from '../interface/interface';
+
 export default function Book() {
     const [titleBook, setTitleBook] = useState<string>("");
     const [nameStudent, setNameStudent] = useState<string>("");
@@ -138,7 +139,7 @@ export default function Book() {
 
     const handleShowEdit = (id:number) => {
         setEditBookId(id);
-        const bookToEdit = books.booksReducer.find((book: BookTodo) => book.id === id);
+        const bookToEdit = books.bookReducer.find((book: BookTodo) => book.id === id);
         if (bookToEdit) {
             setTitleBook(bookToEdit.titleBook);
             setNameStudent(bookToEdit.nameStudent);
@@ -233,7 +234,7 @@ export default function Book() {
                     </tr>
                 </thead>
                 <tbody>
-                    {books.booksReducer.map((book:BookTodo, index:number) => {
+                    {books.bookReducer.map((book:BookTodo, index:number) => {
                         return (
                             <tr key={book.id}>
                                 <td>{index + 1}</td>
