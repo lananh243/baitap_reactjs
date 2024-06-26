@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    width: 300px;
+}
+.grid-item {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+}
+.list-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.list-item {
+    width: 140px;
+    padding: 10px;
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+}

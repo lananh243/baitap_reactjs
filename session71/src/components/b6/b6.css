@@ -1,0 +1,17 @@
+.text {
+    display: grid;
+    background-color: rgb(246, 253, 253);
+    width: 200px;
+    height: 180px;
+}
+.language {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.language:hover {
+    background-color: grey;
+}

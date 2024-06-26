@@ -1,0 +1,22 @@
+.container {
+    display: grid;
+    background-color: black;
+    width: 200px;
+    height: 350px;
+}
+
+.item {
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: black;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+}
+.container-big{
+    display: grid;
+    background-color: black;
+    width: 70px;
+    height: 350px;
+}
