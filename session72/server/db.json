@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "name": "cam"
+    },
+    {
+      "name": "bích",
+      "id": 8
+    },
+    {
+      "name": "ngọc",
+      "id": 10
+    },
+    {
+      "name": "ly",
+      "id": 11
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Kiến thức quan trọng về ReactJS",
+      "image": "https://daotaotester.com/wp-content/uploads/2021/10/React-JS.jpg.webp",
+      "category": "Lập trình web",
+      "date": "12/05/2024",
+      "status": "Đã xuất bản"
+    },
+    {
+      "id": 2,
+      "title": "Ngôn ngữ lập trình Java",
+      "image": "https://tuyendung.kfcvietnam.com.vn/Data/Sites/1/media/blog/java-la-gi.jpg",
+      "category": "Lập trình web",
+      "date": "15/06/2024",
+      "status": "Ngừng xuất bản"
+    },
+    {
+      "id": 3,
+      "title": "Bài tập Typescript",
+      "image": "https://spin.atomicobject.com/wp-content/uploads/Type_Script_Visual_Studio_Code.png",
+      "category": "Ngôn ngữ lập trình",
+      "date": "20/02/2024",
+      "status": "Đã xuất bản"
+    },
+    {
+      "title": "Tìm hiểu Python",
+      "image": "https://media.licdn.com/dms/image/C5612AQEaL4gLanR2pw/article-cover_image-shrink_720_1280/0/1637656233461?e=2147483647&v=beta&t=tK8ZgcKbPgpPM39AvJ3uLPDaRZhUOWZ_YtfivkBeCHA",
+      "category": "Ngôn ngữ lập trình",
+      "date": "02/01/2024",
+      "status": "Đã xuất bản",
+      "content": "",
+      "id": 4
+    },
+    {
+      "title": "Cách dùng Node",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+      "category": "Khác",
+      "date": "23/02/2024",
+      "status": "Ngừng xuất bản",
+      "content": "",
+      "id": 5
+    },
+    {
+      "title": "Netbeans",
+      "image": "https://daotaotester.com/wp-content/uploads/2021/09/Netbean-IDE.jpg.webp",
+      "category": "Khác",
+      "date": "23/01/2024",
+      "status": "Đã xuất bản",
+      "content": "",
+      "id": 6
+    }
+  ]
+}
