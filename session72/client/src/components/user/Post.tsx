@@ -52,19 +52,6 @@ export default function Post() {
     }));
   };
 
-  const handleClock = (postId: number) => {
-    let confirm = window.confirm(
-      "Bạn có chắc chắn muốn ngừng xuất bản bài viết ko ??"
-    );
-    if (confirm) {
-      dispatch(updateStatus({ id: postId, status: "Ngừng xuất bản" }));
-    }
-  };
-
-  const handleEye = (postId: number) => {
-    dispatch(updateStatus({ id: postId, status: "Đã xuất bản" }));
-  };
-
   const handleSubmit = () => {
     if (validateInput()) {
       dispatch(addPost(newPost));
@@ -147,6 +134,27 @@ export default function Post() {
   const handleSearch = () => {
     dispatch(searchNamePost(searchText));
   };
+  /////////ham update trang thai
+  const handleClock = (item: any) => {
+    let confirm = window.confirm(
+      "Bạn có chắc chắn muốn ngừng xuất bản bài viết ??"
+    );
+    if (confirm) {
+      let newPost: any = {
+        ...item,
+        status: "Ngừng xuất bản",
+      };
+      dispatch(updateStatus(newPost));
+    }
+  };
+  // hàm update trạng thái
+  const handleEye = (item: any) => {
+    let newStatusPost: any = {
+      ...item,
+      status: "Đã xuất bản",
+    };
+    dispatch(updateStatus(newStatusPost));
+  };
   return (
     <>
       <div className="container">
@@ -206,7 +214,7 @@ export default function Post() {
                     <td>{post.status}</td>
                     <td>
                       <button
-                        onClick={() => handleClock(post.id)}
+                        onClick={() => handleClock(post)}
                         style={{
                           width: "40px",
                           height: "35px",
@@ -215,7 +223,7 @@ export default function Post() {
                         <i className="fa-solid fa-lock"></i>
                       </button>
                       <button
-                        onClick={() => handleEye(post.id)}
+                        onClick={() => handleEye(post)}
                         style={{
                           width: "40px",
                           height: "35px",

@@ -24,7 +24,7 @@
       "image": "https://daotaotester.com/wp-content/uploads/2021/10/React-JS.jpg.webp",
       "category": "Lập trình web",
       "date": "12/05/2024",
-      "status": "Đã xuất bản"
+      "status": "Ngừng xuất bản"
     },
     {
       "id": 2,
@@ -32,7 +32,7 @@
       "image": "https://tuyendung.kfcvietnam.com.vn/Data/Sites/1/media/blog/java-la-gi.jpg",
       "category": "Lập trình web",
       "date": "15/06/2024",
-      "status": "Ngừng xuất bản"
+      "status": "Đã xuất bản"
     },
     {
       "id": 3,
@@ -40,7 +40,7 @@
       "image": "https://spin.atomicobject.com/wp-content/uploads/Type_Script_Visual_Studio_Code.png",
       "category": "Ngôn ngữ lập trình",
       "date": "20/02/2024",
-      "status": "Đã xuất bản"
+      "status": "Ngừng xuất bản"
     },
     {
       "title": "Tìm hiểu Python",
@@ -65,7 +65,7 @@
       "image": "https://daotaotester.com/wp-content/uploads/2021/09/Netbean-IDE.jpg.webp",
       "category": "Khác",
       "date": "23/01/2024",
-      "status": "Đã xuất bản",
+      "status": "Ngừng xuất bản",
       "content": "",
       "id": 6
     }

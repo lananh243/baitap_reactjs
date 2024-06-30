@@ -15,13 +15,6 @@ export const addPost:any = createAsyncThunk (
         return response.data
     }
 )
-export const updateStatus:any = createAsyncThunk (
-    "posts/updateStatus",
-    async ({id,status}) => {
-        let response = await axios.patch(`http://localhost:8080/posts/${id}`, {status})
-        return response.data
-    }
-)
 export const sortNamePost:any = createAsyncThunk (
     "posts/sortNamePost",
     async () => {
@@ -33,6 +26,17 @@ export const searchNamePost:any = createAsyncThunk (
     "posts/searchNamePost",
     async (searchText) => {
         let response = await axios.get(`http://localhost:8080/posts?title_like=${searchText}`)
+        return response.data
+    }
+)
+export const updateStatus:any =createAsyncThunk("posts/updateStatus",
+    async(item:any)=>{
+    let response = await axios.patch(`http://localhost:8080/posts/${item.id}`,item)
+    return response.data
+})
+export const pagination:any = createAsyncThunk("posts/pagination",
+    async(value:number) => {
+        let response = await axios.get(`http://localhost:8080/posts?page=${value}&limit=3`)
         return response.data
     }
 )
@@ -59,9 +63,11 @@ const postReducer = createSlice ({
             state.posts.push(action.payload)
         })
         .addCase(updateStatus.fulfilled,(state:any,action) => {
-            const index = state.posts.findIndex((post:any) => post.id === action.payload.id)
-            if (index !== -1) {
-                state.posts[index].status = action.payload.status
+            let index = state.posts.findIndex((post:any) => {
+                return post.id === action.payload.id
+            })
+            if (index !== -1){
+                state.posts[index] = action.payload
             }
         })
         .addCase(sortNamePost.fulfilled,(state,action) => {
@@ -69,7 +75,10 @@ const postReducer = createSlice ({
         })
         .addCase(searchNamePost.fulfilled, (state, action) => {
             state.posts = action.payload;
-        });
+        })
+        .addCase(pagination.fulfilled, (state,action) => {
+            state.posts = action.payload
+        })
     }
 })
 export default postReducer.reducer;
