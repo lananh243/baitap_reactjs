@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Giày",
+      "price": 20000,
+      "stock": 5,
+      "image": "https://product.hstatic.net/1000284478/product/50whs_3asxca12n_1_a91c3a5155dc471ead3fba59258179bc_master.jpg",
+      "description": "Giày cao cấp"
+    },
+    {
+      "id": 2,
+      "name": "Váy",
+      "price": 30000,
+      "stock": 4,
+      "image": "https://madora.vn/wp-content/uploads/2021/08/O1CN01qC6BgR2FJvpRICRIy_795618860-1.jpg",
+      "description": "Váy loại 1"
+    },
+    {
+      "id": 3,
+      "name": "Dép",
+      "price": 40000,
+      "stock": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWu6iiSCKKciMdezSqphgIeLVhi_3uPiINWw&s",
+      "description": "Dép loại 1"
+    }
+  ],
+  "cart": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}
