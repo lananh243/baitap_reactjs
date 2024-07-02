@@ -26,9 +26,13 @@ const productReducer:any = createSlice ({
     reducers:{
         // Chứa những hành động
         addToCart: (state:any, action) => {
-            let result = state.findIndex((item:any) => {
+            // console.log(466664,state.cart);
+            
+            let result = state.cart.findIndex((item:any) => {
                 return item.id = action.payload.id
             })
+            console.log(222,result);
+            
             if(result === -1){
                 let newProduct = {...action.payload, quantity : 1};
                 state.cart.push(newProduct)

@@ -3,7 +3,9 @@ import "./cart.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCart } from "../store/reducers/productReducer";
 export default function Cart() {
-  const { cart } = useSelector((state: any) => state.product);
+  const cart = useSelector((state: any) => state);
+  console.log(1111, cart);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllCart());
@@ -23,7 +25,7 @@ export default function Cart() {
           </tr>
         </thead>
         <tbody>
-          {cart.map((item: any, index: number) => {
+          {/* {cart.map((item: any, index: number) => {
             return (
               <tr key={item.id}>
                 <td>{index + 1}</td>
@@ -51,7 +53,7 @@ export default function Cart() {
                 </td>
               </tr>
             );
-          })}
+          })} */}
         </tbody>
       </table>
     </div>

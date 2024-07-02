@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "name": "Pikachu",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lan-anh-f6a8a.appspot.com/o/upload-image%2Fpikachu.jpg?alt=media&token=f0a13606-4882-4d91-9881-55b33fac03da",
+      "id": 1
+    },
+    {
+      "name": "Larva",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lan-anh-f6a8a.appspot.com/o/upload-image%2Fcon%20s%C3%A2u.jpg?alt=media&token=f79ae3cf-7f03-4939-b0bc-e8c80a2a03f5",
+      "id": 2
+    },
+    {
+      "name": "Ong",
+      "image": "https://firebasestorage.googleapis.com/v0/b/lan-anh-f6a8a.appspot.com/o/upload-image%2Fong.png?alt=media&token=be1c1b35-5ba8-4f77-9947-efa44dec03fc",
+      "id": 3
+    }
+  ]
+}

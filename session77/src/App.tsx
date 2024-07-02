@@ -1,12 +1,13 @@
 import React from "react";
+import UploadImage from "./components/UploadImage";
 import Product from "./components/Product";
-import Cart from "./components/Cart";
-import "./App.css";
+
 export default function App() {
   return (
-    <div className="container">
+    <div>
+      App
+      <UploadImage></UploadImage>
       <Product></Product>
-      <Cart></Cart>
     </div>
   );
 }
